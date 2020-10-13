@@ -29,6 +29,11 @@ from sklearn.naive_bayes import GaussianNB
 classifier = GaussianNB()
 classifier.fit(X_train,y_train)
 
+#fitting random forest classifier
+from sklearn.ensemble import RandomForestClassifier
+rc = RandomForestClassifier()
+rc.fit(X_train,y_train)
+
 #predict
 y_pred = classifier.predict(X_test)
 
